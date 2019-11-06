@@ -25,7 +25,7 @@ def echoCommaSeperated(path):
 
 			csvData += classNum+","+BI+","+EI+"\n"
 
-	csv = open("classNum.csv", "w")
+	csv = open(path[0:-4]+".csv", "w")
 	csv.write(csvData)
 	csv.close()
 
