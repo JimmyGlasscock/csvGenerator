@@ -18,10 +18,15 @@ def echoCommaSeperated(path):
 			BI = line[43:52]
 			lastSpace = BI.rfind(' ')
 			BI = BI[lastSpace+1:52]
+			if(line[52:53] == '-'):
+				BI = '-'+BI
 			
 			EI = line[113:121]
 			lastSpace = EI.rfind(' ')
 			EI = EI[lastSpace+1:121]
+			if(line[121:122] == '-'):
+				EI = '-'+EI
+
 
 			csvData += classNum+","+BI+","+EI+"\n"
 
